@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practica Javascript</title>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="/home/vant/Escritorio/FullStack/CSS/final.css"/>
+    </head>
+        <body>
+            <header>Learning to Code and being a Developer</header>
+                <script>
+                document.write("Urtzi! show me!");
+                </script>
+            <ul>
+                <li><a id="Comedia">Peliculas</a></li>
+                <li><a id="Accion">Peliculas</a></li>
+                <li><a id="Animacion">Peliculas</a></li>
+                <li><a id="Terror">Peliculas</a></li>
+                <li><a id="Belica">Peliculas</a></li>
+                <li><a id="CienciaFiccion">Peliculas</a></li>
+                <li><a id="Documental">Peliculas</a></li>
+            </ul>
+    <script>
+        var lista_pelis = {
+            
+    comedia: ["Algo pasa con Mary","Tienes un email", "Campeones"],
+    accion: ["El señor de los anillos","Regreso al futuro", "Matrix", "Los Goonies", "Karate Kid", "El Gran Halcon"],
+    animacion: ["Los increibles 2", "El Rey Leon", "Monstruos SA", "Aladdin"],
+    terror: ["IT", "Poltergeist"],
+    belica: ["Pearl Harbour", "Los Cañones de Navarone"],
+    ciencia_ficcion: ["Tron", "Blade Runner", "Inteligencia Artificial"],
+    documental: ["Oceano Azul"],
+            
+    watch_1: function(){
+        for (var i=0; i<2 ; i++){
+        document.write(this.comedia[i] + "<br>");
+        }
+    },
+    watch_2: function(){
+        for (var i=0; i<5 ; i++){
+        document.write(this.accion[i] + "  ");
+        }
+    },
+    watch_3: function(){
+        for (var i=0; i<4 ; i++){
+        document.write(this.animacion[i] + "  ");
+        }
+    },
+    watch_4: function(){
+        for (var i=0; i<2 ; i++){
+        document.write(this.terror[i] + "  ");
+        }
+    },
+    watch_5: function(){
+        for (var i=0; i<2 ; i++){
+        document.write(this.belica[i] + "  ");
+        }
+    },
+    watch_6: function(){
+        for (var i=0; i<3 ; i++){
+        document.write(this.ciencia_ficcion[i] + "  ");
+        }
+    },
+    watch_7: function(){
+        for (var i=0; i<1 ; i++){
+        document.write(this.documental[i] + "  ");
+        }
+    };
+            
+     </script>
+                <script>
+                var pelis = document.getElementsByTagName('a');
+                pelis[0].textContent = "Aqui mis peliculas favoritas del genero comedia";         pelis[1].textContent = "Aqui mis peliculas favoritas del genero accion";
+                pelis[2].textContent = "Aqui mis peliculas favoritas del genero animacion";
+                pelis[3].textContent = "Aqui mis peliculas favoritas del genero terror";
+                pelis[4].textContent = "Aqui mis peliculas favoritas del genero belico";
+                pelis[5].textContent = "Aqui mis peliculas favoritas del genero ciencia ficcion";
+                pelis[6].textContent = "Aqui mis peliculas favoritas del genero documental";
+                </script>
+        </body>
+</html>
